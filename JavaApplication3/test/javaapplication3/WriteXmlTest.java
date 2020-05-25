@@ -3,54 +3,54 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package javaapplication3;
 
-import javaapplication3.WriteXml;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
  *
  * @author Jamaiya FX
  */
-public class TestWriteXml {
+public class WriteXmlTest {
     private WriteXml writeXML;
     
-    public TestWriteXml() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
+    public WriteXmlTest() {
+        
     }
     
     @Before
     public void setUp() {
         writeXML = new WriteXml();
     }
+    
+    @After
+    public void tearDown() {
+        writeXML = null;
+    }
 
+    /**
+     * Test of main method, of class WriteXml.
+     * @throws javax.xml.parsers.ParserConfigurationException
+     * @throws javax.xml.transform.TransformerException
+     */
+    
     @Test
     public void writexmlTests() throws ParserConfigurationException, TransformerException{
 //      Arrange
         final String success = "Xml Created succesfully";
         
 //      Act
-        final String actual = writeXML.main();
+        final String actual;
+        actual = writeXML.WriteToXml();
         
 //      Assert
          Assert.assertEquals(success, actual);
     }
     
-    @After
-    public void tearDown() {
-        writeXML = null;
-    }
+    
 }

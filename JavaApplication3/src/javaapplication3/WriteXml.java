@@ -28,7 +28,8 @@ public class WriteXml {
 public static final String filePath = "C:\\Users\\user\\Desktop\\school\\"
         + "JavaApplication3\\src\\javaapplication3\\receipt.xml";    
 
-public static String main() throws ParserConfigurationException, TransformerException{
+public static String WriteToXml() throws ParserConfigurationException, 
+        TransformerException{
   try{
 //      Create an instance of DocumentBuilder Factory
         DocumentBuilderFactory documentFac = DocumentBuilderFactory.newInstance();
@@ -40,7 +41,7 @@ public static String main() throws ParserConfigurationException, TransformerExce
         org.w3c.dom.Document xmldocument = documentBuilder.newDocument();
 
 //      Instance of Address class 
-        Address customerAddress1 = new Address("street name","city name",
+        Address customerAddress1 = new Address("streetname","cityname",
                 "country name","postal code");
 
 //      Instance of OrderInfo class
@@ -189,7 +190,6 @@ public static String main() throws ParserConfigurationException, TransformerExce
         }
 //       catch ParserConfigurationException
   catch (ParserConfigurationException pce) {
-            pce.printStackTrace();
         }        
     return "Xml Created succesfully";
      

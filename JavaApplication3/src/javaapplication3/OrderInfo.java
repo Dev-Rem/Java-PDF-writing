@@ -13,6 +13,8 @@ public class OrderInfo {
     private String comment;
     private String orderType;
 
+    public OrderInfo(){}
+    
     public OrderInfo(String comment, String orderType) {
         this.comment = comment;
         this.orderType = orderType;

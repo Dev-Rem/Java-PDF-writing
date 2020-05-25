@@ -4,8 +4,8 @@
 <firstname>lastname</firstname>
 <lastname>firstname</lastname>
 <postalcode>postal code</postalcode>
-<streetname>street name</streetname>
-<cityname>city name</cityname>
+<streetname>streetname</streetname>
+<cityname>cityname</cityname>
 <countryname>country name</countryname>
 <ordertype>Delivery</ordertype>
 <comment>Some customer comment</comment>

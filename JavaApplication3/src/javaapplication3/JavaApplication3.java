@@ -25,6 +25,8 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;    
 import java.io.File;  
 import java.util.ArrayList;
+import static javaapplication3.WriteXml.WriteToXml;
+import javax.xml.parsers.ParserConfigurationException;
 
 /**
  *
@@ -32,14 +34,19 @@ import java.util.ArrayList;
  */
 public class JavaApplication3 {
 
+    public JavaApplication3(){}
     /**
-     * @param args the command line arguments
+     * @param args
      * @throws javax.xml.transform.TransformerConfigurationException
+     * @throws javax.xml.parsers.ParserConfigurationException
      */
     
     
-    public static void main(String[] args) throws TransformerConfigurationException, 
-        TransformerException {
+    public static void  main(String[] args) throws TransformerConfigurationException, 
+        TransformerException,
+        ParserConfigurationException {
+        
+        
 //      Define file path where pdf will be created
     	String FILE_NAME = "C:\\Users\\user\\Desktop\\receipt.pdf";
         
@@ -55,6 +62,9 @@ public class JavaApplication3 {
         
         try{  
             
+//          Call WriteToXml static method
+            WriteToXml();
+            
             dBuilder = dbFactory.newDocumentBuilder();
 //          Parse xml file
             org.w3c.dom.Document doc = dBuilder.parse(xmlFile);
@@ -67,7 +77,7 @@ public class JavaApplication3 {
             
 //          Now XML is loaded as Document in memory, lets convert it to Object List
             ArrayList<CustomerDetail> detailList = new ArrayList<>();
-            ArrayList<ItemOrdered> itemList = new ArrayList<>();
+            ArrayList<OrderItem> itemList = new ArrayList<>();
             ArrayList<Restaurant> restaurantDetailList = new ArrayList<>();
             
             for (int i = 0; i < nodeListCD.getLength(); i++) {
@@ -189,7 +199,7 @@ public class JavaApplication3 {
 
             document.add(space);
             
-        for (ItemOrdered item : itemList) {
+        for (OrderItem item : itemList) {
        
             Paragraph item1 = new Paragraph();
             item1.setAlignment(Element.ALIGN_CENTER);
@@ -270,8 +280,8 @@ public class JavaApplication3 {
         return detail;
     }
      
-    private static ItemOrdered itemOrdered(Node node) {
-        ItemOrdered item = new ItemOrdered();
+    private static OrderItem itemOrdered(Node node) {
+        OrderItem item = new OrderItem();
         if (node.getNodeType() == Node.ELEMENT_NODE) {
             org.w3c.dom.Element element = (org.w3c.dom.Element) node;
             item.setName(getTagValue("name", element));

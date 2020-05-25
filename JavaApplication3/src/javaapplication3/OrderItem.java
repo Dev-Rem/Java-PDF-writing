@@ -14,6 +14,8 @@ public class OrderItem {
     private String quantity;
     private String unitPrice;
 
+    public OrderItem(){}
+    
     public OrderItem(String name, String quantity, String unitPrice) {
         this.name = name;
         this.quantity = quantity;
