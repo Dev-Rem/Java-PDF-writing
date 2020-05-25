@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<receipt>
+<customerdetails id="1">
+<firstname>lastname</firstname>
+<lastname>firstname</lastname>
+<postalcode>postal code</postalcode>
+<streetname>street name</streetname>
+<cityname>city name</cityname>
+<countryname>country name</countryname>
+<ordertype>Delivery</ordertype>
+<comment>Some customer comment</comment>
+</customerdetails>
+<orderitems>
+<item id="1">
+<name>food name </name>
+<quantity>3</quantity>
+<unitprice>20</unitprice>
+</item>
+</orderitems>
+<restaurantdetails>
+<name>restuarant name</name>
+<postalcode>postal code</postalcode>
+<streetname>streetname</streetname>
+<cityname>city name</cityname>
+<countryname>country name</countryname>
+<email>restaurantname@email.com</email>
+<mobile>mobile number</mobile>
+</restaurantdetails>
+</receipt>
