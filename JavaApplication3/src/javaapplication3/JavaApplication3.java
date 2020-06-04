@@ -10,7 +10,6 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.Font.FontFamily;
-import com.itextpdf.text.Image;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.LineSeparator;
@@ -48,12 +47,14 @@ public class JavaApplication3 {
         
         
 //      Define file path where pdf will be created
+//      Can be changed to a local file path on your machine
     	String FILE_NAME = "C:\\Users\\user\\Desktop\\receipt.pdf";
         
 //      Create an instance of Document()
         Document document = new Document();
         
 //       Path of xml file to be read
+//      Can be changed to a local file path on your machine
         String filePath = "C:\\Users\\user\\Desktop\\school\\JavaApplication3\\src"
                 + "\\javaapplication3\\receipt.xml";
         File xmlFile = new File(filePath);

@@ -25,6 +25,7 @@ import javax.xml.transform.stream.StreamResult;
 public class WriteXml {
     
 //    Specify file path of xml file to be created
+//      Can be changed to a local file path on your machine
 public static final String filePath = "C:\\Users\\user\\Desktop\\school\\"
         + "JavaApplication3\\src\\javaapplication3\\receipt.xml";    
 
