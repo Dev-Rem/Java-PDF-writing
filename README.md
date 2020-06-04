@@ -60,4 +60,13 @@ MACOS and LINUX:
   https://www.youtube.com/watch?v=tSTLrQCTlYE
   
 
-  
+# Running unit tests
+
+The Application has unit test written with JUnit for all classes. You can run JUnit tests on the entire application or on individual files and see the results in the IDE. 
+The easiest way to run all the unit tests for the project is to choose Run > Test <PROJECT_NAME> from the main menu. And to run individual test on a particular class then right click on the Files -> Expand JavaApplication3 folder -> Expand src folder -> Expand javaApplication3 folder -> Right click on the class you want to test and click on "Test file".
+
+All test files are in the JavaApplication3 -> test -> javaApplication3 folder.
+
+
+
+
