@@ -44,4 +44,20 @@ Below is a link from github help on how to clone the repo on various  machines D
 https://help.github.com/en/enterprise/2.13/user/articles/cloning-a-repository
   
 
-# Running the Application on Netbeans
+# Running Application on Netbeans
+
+To run the application ensure all above steps were followed without any exceptions, the instructions below are for windows users, links on how to open the project on other machines will be provided.
+
+WINDOWS:
+  Launch the netbeans IDE wait for it to load and a start page will be displayed.
+  Click on File -> OpenProject
+  Navigate to the cloned project click on it
+  Click on "Open Project".
+  The project will open IDE.
+  FOR MORE DETAILED EXPLANATIONS: http://blog.jdevelop.eu/?p=29
+  
+MACOS and LINUX:
+  https://www.youtube.com/watch?v=tSTLrQCTlYE
+  
+
+  
