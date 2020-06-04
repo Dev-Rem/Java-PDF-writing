@@ -2,7 +2,10 @@
 
 This is a java application that is able to create and write data into and xml file using DOM, the application is also able to read data from the written xml into a pdf file Automatically.
 The Application is and examples of a restaurant receipt that is sent to a customer, it contains information about the restaurant, Customer, items ordered from the restaurant and their prices.
+
 The WriteXml.java class contains a static WriteToXml method which uses various java modules to such as "javax.xml.parsers.DocumentBuilder" for creating the xml document and "javax.xml.transform.TransformerFactory" for transforming the DOM object to an XML file.
+
+The javaApplication3 class reads 
 
 
 #  Getting Started (Downloading and installing Java Development Kit)
@@ -63,9 +66,24 @@ MACOS and LINUX:
 # Running unit tests
 
 The Application has unit test written with JUnit for all classes. You can run JUnit tests on the entire application or on individual files and see the results in the IDE. 
-The easiest way to run all the unit tests for the project is to choose Run > Test <PROJECT_NAME> from the main menu. And to run individual test on a particular class then right click on the Files -> Expand JavaApplication3 folder -> Expand src folder -> Expand javaApplication3 folder -> Right click on the class you want to test and click on "Test file".
 
+The easiest way to run all the unit tests for the project is to choose Run > Test <PROJECT_NAME> from the main menu. And to run individual test on a particular class then right click on the Files -> Expand JavaApplication3 folder -> Expand src folder -> Expand javaApplication3 folder -> Right click on the class you want to test and click on "Test file".
+FOR FURTHER READING: https://netbeans.org/kb/docs/java/junit-intro.html#:~:text=The%20easiest%20way%20to%20run,node%20and%20choose%20Run%20File.
 All test files are in the JavaApplication3 -> test -> javaApplication3 folder.
+
+
+# Conclucion
+
+This is my actual first project in java, contributions and pull requests are highly welcomed as well as critism.
+During the creation of the application a few articles were used for knowledge of writing/reading xml files with java and also writing to a pdf file references to the articles will be listed below.
+
+References:
+  General Knowledge of java - https://www.w3schools.com/java/default.asp
+  Writing to xml file - https://examples.javacodegeeks.com/core-java/xml/parsers/documentbuilderfactory/create-xml-file-in-java-using-dom-parser-example/
+  Reading from xml file - https://www.javatpoint.com/how-to-read-xml-file-in-java
+  Writing to pdf file - https://www.chillyfacts.com/create-pdf-dynamically-images-using-java/
+  
+
 
 
 
