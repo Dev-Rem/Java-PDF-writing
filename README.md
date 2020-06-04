@@ -78,9 +78,13 @@ This is my actual first project in java, contributions and pull requests are hig
 During the creation of the application a few articles were used for knowledge of writing/reading xml files with java and also writing to a pdf file references to the articles will be listed below.
 
 References:
+  
   General Knowledge of java - https://www.w3schools.com/java/default.asp
-  Writing to xml file - https://examples.javacodegeeks.com/core-java/xml/parsers/documentbuilderfactory/create-xml-file-in-java-using-dom-parser-example/
+ 
+ Writing to xml file - https://examples.javacodegeeks.com/core-java/xml/parsers/documentbuilderfactory/create-xml-file-in-java-using-dom-parser-example/
+  
   Reading from xml file - https://www.javatpoint.com/how-to-read-xml-file-in-java
+  
   Writing to pdf file - https://www.chillyfacts.com/create-pdf-dynamically-images-using-java/
   
 
