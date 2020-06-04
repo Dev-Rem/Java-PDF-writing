@@ -36,9 +36,12 @@ STEP 2: Run the Installer
   
 # Cloning the repository
 
-To clone the repo you need to have git bash installed to be able to clone it remotely. Below there is a link to the official git bash site on how to install git bash on windows and other machines.
+To clone the repo you need to have git bash installed to be able to clone it remotely.
+Below there is a link to the official git bash site on how to install git bash on windows and other machines.
 https://www.stanleyulili.com/git/how-to-install-git-bash-on-windows/
 
 Below is a link from github help on how to clone the repo on various  machines Download or remote clone.
 https://help.github.com/en/enterprise/2.13/user/articles/cloning-a-repository
   
+
+# Running the Application on Netbeans
